@@ -34,3 +34,5 @@ for(y=0; y<=23; y++){
 ```
 5. Profit
 
+## Credit
+Inspired by [afiqiqmal](https://github.com/afiqiqmal/UiTM-Sufo-autofill-radio-formm)
