@@ -15,8 +15,12 @@ SuFO
 
 
 for(y=0; y<=23; y++){
+	var min=2; 
+    	var max=6;  
+    	var random =Math.floor(Math.random() * (+max - +min)) + +min; 
+	
     var questionNo = document.getElementsByName('data[AnalyticSufo][answer'+y+']');
-        questionNo[2].checked = true
+        questionNo[random].checked = true
 	document.getElementsByClassName('btn btn-success btn-flat')[0].click()
 }
 
@@ -27,8 +31,12 @@ Exit Survey
 
 
 for(y=0; y<=23; y++){
-    var questionNo = document.getElementsByName('data['+y+'][check]')
-        questionNo[2].checked = true
+	var min=2; 
+    	var max=6;  
+    	var random =Math.floor(Math.random() * (+max - +min)) + +min;
+	
+    var questionNo = document.getElementsByName('data['+y+'][check]');
+        questionNo[random].checked = true
 	document.getElementsByClassName('btn btn-success btn-flat')[0].click()
 }
 
